@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Insert title here</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="assets/javascript/google.maps.model.js"></script>
+		<script src="assets/javascript/google.drive.model.js"></script>
+		<script src="assets/javascript/view.js"></script>
+		<script src="assets/javascript/controller.js"></script>
+		<link href="assets/stylesheets/desktop.css" media="all" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<section class="map">
+			<img src="assets/gfx/map.png"/>
+			<div id="googleMapMarker">X</div>
+		</section>
+		<nav class="thumbs">
+			<ul id="thumbContainer"></ul>
+		</nav>
+		<seaction id="textContainer">
+			<h1>Hva synes ungdommen i Europa?</h1>
+			<img class="navn"/>
+			<h3><span class="navn"></span> fra <span class="by"></span>, <span class="land"></span></h3>
+			<p class="ingress"></p>
+			<p class="body"></p>
+		</section>
+	</body>
+	<script>
+		var controller = new _controller();
+		
+		controller.fillPageWithData();
+		controller.attachClickEvents();
+	</script>
+</html>

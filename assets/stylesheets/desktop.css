@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6em; }
+
+body {
+  width: 980px;
+  font-family: arial, helvetica, sans-serif; }
+
+p {
+  margin: 0 0 16px 0; }
+
+section.map {
+  background: gray;
+  border: 2px solid black;
+  height: 500px;
+  overflow: hidden;
+  position: relative; }
+  section.map img {
+    width: 100%; }
+
+nav.thumbs ul {
+  clear: both; }
+  nav.thumbs ul li {
+    border: 2px solid white;
+    opacity: .5;
+    cursor: pointer;
+    list-style: none;
+    float: left;
+    width: 118.5px;
+    background: #ccc; }
+    nav.thumbs ul li.active, nav.thumbs ul li:hover {
+      opacity: 1; }
+    nav.thumbs ul li img {
+      width: 100%; }
+    nav.thumbs ul li span {
+      line-height: 1em;
+      font-size: 14px;
+      display: block;
+      padding: 2px; }
+
+#googleMapMarker {
+  font-size: 12px;
+  display: inline;
+  border-radius: 5px;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  height: 15px;
+  position: absolute;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border: 6px solid red;
+  line-height: 15px; }
+  #googleMapMarker:after {
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+    border-width: 9px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    display: block;
+    width: 0px;
+    content: " "; }
