@@ -31,12 +31,13 @@ nav.thumbs {
 			float: left;
 			width: 118.5px;
 			background: #ccc;
+			overflow: hidden;
 			&.active,
 			&:hover {
 				opacity: 1;
 			}
 			img {
-				width: 100%;
+				height: 90px;
 			}
 			span {
 				line-height: 1em;
